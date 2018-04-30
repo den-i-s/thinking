@@ -74,6 +74,9 @@
 html {
   font-size: 10px; }
 
+img {
+  max-width: 100%; }
+
 body {
   margin: 0;
   background-color: #cacaca;
@@ -223,6 +226,17 @@ a {
     color: #000;
     margin: 0 15px;
     padding: 10px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; }
+
+.gallery {
+  margin-top: 50px;
+  padding-bottom: 50px; }
+  .gallery-block {
+    height: 570px;
+    background-color: #cacaca;
     background-position: bottom center;
     background-repeat: no-repeat;
     -webkit-background-size: 100% 100%;
