@@ -36,6 +36,7 @@
             <li><a href="news.html">Новости</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="articles.html">Статьи</a></li>
+            <li><a href="sum.html">Sum</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
@@ -57,24 +58,47 @@
           <div class="left-sidebar_object">
             <img src="img/left-nav-img-1.jpg" alt="img" width="100%">
           </div>
-          <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
-          </div>            <div class="left-sidebar_object">
+<div class="left-sidebar_object-description">
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-sidebar_object">
             <img src="img/left-nav-img-2.jpg" alt="img" width="100%">
           </div>
           <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
-          </div>            <div class="left-sidebar_object">
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-sidebar_object">
             <img src="img/left-nav-img-3.jpg" alt="img" width="100%">
           </div>
           <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
@@ -83,7 +107,8 @@
       <!-- /.col-md-4 left-sidebar-->
       <div class="col-md-9">
         <div class="content">
-        
+          <p>Пока нет ни каких новостей, но они обязательно появятся в ближайшее время...</p>
+          <div class="content-img"><img src="img/waiting.jpg" alt="waiting"></div>
         </div>
         <!-- /.content -->
         <div class="directions">
@@ -135,6 +160,7 @@
             <li><a href="news.html">Новости</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="articles.html">Статьи</a></li>
+            <li><a href="sum.html">Sum</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
@@ -170,32 +196,6 @@
   </footer>
 
   <script src="js/libs.min.js"></script>
-  <script type="text/javascript">
-    document.ondragstart = noselect; 
-    // запрет на перетаскивание 
-    document.onselectstart = noselect; 
-    // запрет на выделение элементов страницы 
-    document.oncontextmenu = noselect; 
-    // запрет на выведение контекстного меню 
-    function noselect() {return false;}
-</script>
-<script>
-  $(document).ready(function() {
-    var menuBtn = $('.top-nav_btn');
-    var sidebarBtn = $('.left-sidebar_btn');
-    var menu = $('.top-nav_menu');
-    var sidebarMenu = $('.left-sidebar_menu');
-
-    menuBtn.on('click', function(event) {
-      event.preventDefault();
-      menu.toggleClass('top-nav_menu__active');  
-    });
-    sidebarBtn.on('click', function(event) {
-      event.preventDefault();
-      sidebarMenu.toggleClass('left-sidebar_menu__active');  
-    });
-  });
-</script>
   <script src="js/common.js"></script>
 </body>
 </html>

@@ -36,6 +36,7 @@
             <li><a href="news.html">Новости</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="articles.html">Статьи</a></li>
+            <li><a href="sum.html">Sum</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
@@ -58,23 +59,46 @@
             <img src="img/left-nav-img-1.jpg" alt="img" width="100%">
           </div>
           <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
-          </div>            <div class="left-sidebar_object">
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-sidebar_object">
             <img src="img/left-nav-img-2.jpg" alt="img" width="100%">
           </div>
           <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
-          </div>            <div class="left-sidebar_object">
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left-sidebar_object">
             <img src="img/left-nav-img-3.jpg" alt="img" width="100%">
           </div>
           <div class="left-sidebar_object-description">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae accusantium eaque, nisi quasi numquam.</p>
-            <a href="#">more...</a>
+            <div class="acardion-body">
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non dicta a quaerat ut dolores consequuntur velit nam hic nostrum!<br><a href="#">more...</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
@@ -83,7 +107,31 @@
       <!-- /.col-md-4 left-sidebar-->
       <div class="col-md-9">
         <div class="content">
-        
+          <div class="accordions">
+            <div class="acardion-body">
+              <h1>Статьи</h1>
+              <ul>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quidem.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odit earum enim consequuntur blanditiis praesentium assumenda illo expedita! Alias expedita aliquid voluptatibus eum officia accusamus soluta. Numquam minus dolor adipisci possimus quae ut culpa magnam officiis, eius sapiente natus, perferendis ex error, distinctio molestias? Inventore eaque enim eius laborum tempore.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, doloremque.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quaerat voluptatem accusamus molestiae neque quisquam consectetur beatae dolor quis possimus, vitae quod iusto vel laboriosam odio ad optio magnam recusandae qui, perferendis, ipsa similique voluptatibus, illo sunt. Eos facilis fugit, ea vero cumque. Cupiditate consequatur minima fugit dolore, odio laborum.</p>
+                </li>
+                <li>
+                  <input type="checkbox" checked>
+                  <i></i>
+                  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, quod.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quas fugiat fugit delectus, ducimus quia praesentium reprehenderit? Magni natus ipsa reprehenderit unde nostrum. Perferendis perspiciatis natus quisquam fugiat dignissimos esse sapiente eos eligendi quod, ab suscipit architecto reiciendis consequatur amet tenetur doloribus magni ipsam eum. Non alias incidunt libero accusantium?</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- /.content -->
         <div class="directions">
@@ -135,6 +183,7 @@
             <li><a href="news.html">Новости</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li><a href="articles.html">Статьи</a></li>
+            <li><a href="sum.html">Sum</a></li>            
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </div>
@@ -170,32 +219,6 @@
   </footer>
 
   <script src="js/libs.min.js"></script>
-  <script type="text/javascript">
-    document.ondragstart = noselect; 
-    // запрет на перетаскивание 
-    document.onselectstart = noselect; 
-    // запрет на выделение элементов страницы 
-    document.oncontextmenu = noselect; 
-    // запрет на выведение контекстного меню 
-    function noselect() {return false;}
-</script>
-<script>
-  $(document).ready(function() {
-    var menuBtn = $('.top-nav_btn');
-    var sidebarBtn = $('.left-sidebar_btn');
-    var menu = $('.top-nav_menu');
-    var sidebarMenu = $('.left-sidebar_menu');
-
-    menuBtn.on('click', function(event) {
-      event.preventDefault();
-      menu.toggleClass('top-nav_menu__active');  
-    });
-    sidebarBtn.on('click', function(event) {
-      event.preventDefault();
-      sidebarMenu.toggleClass('left-sidebar_menu__active');  
-    });
-  });
-</script>
   <script src="js/common.js"></script>
 </body>
 </html>
